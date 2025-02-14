@@ -1,3 +1,9 @@
+apt (2.9.29lyos1) unstable; urgency=medium
+
+  * Revert t64.
+
+ -- lhdjply <lhdjply@126.com>  Sat, 15 Feb 2025 15:16:21 +0800
+
 apt (2.9.29) unstable; urgency=medium
 
   [ Helge Kreutzmann ]

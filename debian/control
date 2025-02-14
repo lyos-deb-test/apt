@@ -40,7 +40,7 @@ Package: apt
 Architecture: any
 Depends: base-passwd (>= 3.6.1) | adduser,
          ${openpgp:Depends},
-         libapt-pkg6.0t64 (>= ${binary:Version}),
+         libapt-pkg6.0 (>= ${binary:Version}),
          ${apt:keyring},
          ${misc:Depends},
          ${shlibs:Depends}
@@ -72,8 +72,7 @@ Description: commandline package manager
   * apt-extracttemplates is used by debconf to prompt for configuration
     questions before installation.
 
-Package: libapt-pkg6.0t64
-Replaces: libapt-pkg6.0
+Package: libapt-pkg6.0
 Architecture: any
 Multi-Arch: same
 Priority: optional
@@ -83,7 +82,7 @@ Breaks: libapt-pkg6.0 (<< ${source:Version}), appstream (<< 0.9.0-3~), apt (<< 1
 Recommends: apt (>= ${binary:Version})
 Conflicts: libnettle8 (<< 3.9.1-2.2~)
 Section: libs
-Provides: ${t64:Provides}, libapt-pkg (= ${binary:Version})
+Provides: ${:Provides}, libapt-pkg (= ${binary:Version})
 Description: package management runtime library
  This library provides the common functionality for searching and
  managing packages as well as information about packages.
